@@ -2,27 +2,29 @@
   "name": "AUTH",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/Farhan559/Auth_TS.git",
+  "author": "Farhan559 <farhansiddiqui559@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^5.19.1",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/jsonwebtoken": "^9.0.6",
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.6.2",
     "prisma": "^5.19.1"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.5.5",
+    "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
-  },
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/app.js",
-    "dev": "ts-node src/app.ts"
-  }
+  },"scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc"
+}
+
 }
